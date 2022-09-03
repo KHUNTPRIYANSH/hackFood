@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eduford</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="imgs/logo.png" alt="" /></a>
+        <div class="links" id="nav-links">
+          <i class="fa fa-times" onclick="hidemanu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmanu()"></i>
+      </nav>
+      <h1>
+        Our Certificates & Online Programs For 2021
+      </h1>
+    </section>
+    <!-- blog page  -->
+    <section class="blog-c">
+      <div class="row">
+        <div class="b-l">
+          <img src="imgs/certificate.jpg" alt="" />
+          <h2>
+            Our Certificates & Online Programs For 2021
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, porro
+            cupiditate eligendi repellat consectetur sed totam esse sapiente
+            inventore quod ab magni iste, saepe quisquam animi corporis illo
+            cupiditate eligendi repellat consectetur sed totam esse sapiente
+            inventore quod ab magni iste, saepe quisquam animi corporis illo
+            officia? Quas rem sapiente nobis aspernatur doloribus?
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+            corrupti, molestiae nihil perspiciatis qui non rerum est asperiores
+            sed iste. Cum blanditiis quam obcaecati corporis eius debitis saepe
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+            corrupti, molestiae nihil perspiciatis qui non rerum est asperiores
+            sed iste. Cum blanditiis quam obcaecati corporis eius debitis saepe
+            velit inventore excepturi quidem. Animi facilis ullam nesciunt
+            laboriosam repellendus illo commodi aliquam! Quos nam est rerum,
+            corrupti, molestiae nihil perspiciatis qui non rerum est asperiores
+            sed iste. Cum blanditiis quam obcaecati corporis eius debitis saepe
+            velit inventore excepturi quidem. Animi facilis ullam nesciunt
+            laboriosam repellendus illo commodi aliquam! Quos nam est rerum,
+            ducimus repellendus consequuntur eligendi porro.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minima
+            ab nostrum quidem quis voluptate incidunt quam quibusdam magni
+            soluta, assumenda impedit et dicta inventore error laborum explicabo
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minima
+            ab nostrum quidem quis voluptate incidunt quam quibusdam magni
+            soluta, assumenda impedit et dicta inventore error laborum explicabo
+            praesentium accusamus?
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minima
+            ab nostrum quidem quis voluptate incidunt quam quibusdam magni
+            soluta, assumenda impedit et dicta inventore error laborum explicabo
+            ab nostrum quidem quis voluptate incidunt quam quibusdam magni
+            soluta, assumenda impedit et dicta inventore error laborum explicabo
+            praesentium accusamus?
+          </p>
+
+          <div class="comment">
+            <h3>Leave A Comment</h3>
+            <form action="" class="c-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="btn red-btn">Post Comment</button>
+            </form>
+          </div>
+        </div>
+        <div class="b-r">
+          <h3>
+            Post Categories
+          </h3>
+          <div>
+            <span>Business Analyties</span>
+            <span>21</span>
+          </div>
+          <div>
+            <span>Data Science</span>
+            <span>28</span>
+          </div>
+          <div>
+            <span>Machine Learning</span>
+            <span>15</span>
+          </div>
+          <div>
+            <span>Computer Science</span>
+            <span>36</span>
+          </div>
+          <div>
+            <span>AutoCAD</span>
+            <span>42</span>
+          </div>
+          <div>
+            <span>AI</span>
+            <span>30</span>
+          </div>
+          <div>
+            <span>Commerce</span>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer  -->
+    <section class="footer">
+      <h4>
+        About US
+      </h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil iste
+        error, reprehenderit rem nulla ab alias velit
+        <br />
+        distinctio in facere minus esse perspiciatis vero! Laboriosam.
+      </p>
+      <div class="icons">
+        <div class="fa fa-facebook"></div>
+        <div class="fa fa-twitter"></div>
+        <div class="fa fa-instagram"></div>
+        <div class="fa fa-linkedin"></div>
+      </div>
+      <p>
+        Made with
+        <i class="fa fa-heart-o"></i>
+        by Priyansh Khunt
+      </p>
+    </section>
+    <script>
+      var navLinks = document.getElementById('nav-links')
+      function showmanu() {
+        navLinks.style.right = '0px'
+      }
+      function hidemanu() {
+        navLinks.style.right = '-200px'
+      }
+    </script>
+  </body>
+</html>
