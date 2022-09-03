@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <section class="header">
+    <section class="header" id="home">
       <video autoplay muted loop id="myVideo">
         <source src="vids/home.mp4" type="video/mp4" />
       </video>
@@ -36,12 +36,17 @@
         <div class="links" id="nav-links">
           <i class="fa fa-times" onclick="hidemanu()"></i>
           <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="course.html">Services</a></li>
-            <li><a href="faculty.html">Posts</a></li>
-            <li><a href="downloads.html">Reviews</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#post">Posts</a></li>
+            <li><a href="#review">Reviews</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+            <li><a href="#">
+              <span class="btn">
+                Join Us
+              </span>
+              </a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showmanu()"></i>
@@ -60,7 +65,7 @@
       <!------------about------------>
 
       <!-- about-us contant  -->
-      <section class="about-us">
+      <section class="about-us" id="about">
         <center>
           <h1>About <b class="red">hackFood</b></h1>
         </center>
@@ -118,7 +123,7 @@
       </section>
 
       <!--                Service             -->
-      <section class="course">
+      <section class="course" id="service">
         <h1>Services We Offer</h1>
         <p> To be very helpfull for the NGOs and other Authorities</p>
         <div class="row">
@@ -155,7 +160,7 @@
      
 
       <!-- facilities   -->
-      <section class="facilities">
+      <section class="facilities" id="post">
         <h1>Our Facilities</h1>
         <p>  To take cognizance of social, ethical and environmental
           issues.</p>
@@ -188,7 +193,7 @@
       </section>
 
       <!-- testimonials  -->
-      <section class="test">
+      <section class="test" id="review">
         <h1>What Our Clients Says</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         <div class="row">
@@ -230,7 +235,7 @@
       </section>
 
       <!-- call to action  -->
-      <section class="cta">
+      <section class="cta" id="contact">
         <h1>
           Join <span style="color: #45a247">hackFood </span> To Save Help
           <br />
@@ -261,9 +266,13 @@
           by quadHackers
         </p>
       </section>
+      <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <i class="fa fa-home"></i>
+      </button>
     </div>
     <script>
       var navLinks = document.getElementById("nav-links");
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
       function showmanu() {
         navLinks.style.right = "0px";
@@ -272,6 +281,13 @@
       function hidemanu() {
         navLinks.style.right = "-200px";
       }
+      function scrollToTop() {
+        // Scroll to top logic
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+      })
+    }
     </script>
   </body>
 </html>
