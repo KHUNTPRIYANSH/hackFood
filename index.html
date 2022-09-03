@@ -21,6 +21,29 @@
   </head>
 
   <body>
+    <section><div class="popup" id="popup-1">
+      <div class="content">
+       <div class="close-btn" onclick="togglePopup()">
+        ×</div>
+      <div class="wrap">
+        <h1>Sign <span class="red">Up</span></h1> 
+        <div class="input-field"><input placeholder="Email" class="validate"></div>
+        <div class="input-field"><input placeholder="Password" class="validate"></div>
+        <div class="btn btn-g">Sign in</div>
+        <p>Don't have an account? Than Login with <a href="/signup.html">Google</a></p>
+
+        <div class="google-btn">
+          <div class="google-icon-wrapper">
+            <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+          </div>
+          <p class="btn-text"><b>Sign in with google</b></p>
+        </div>
+      </div>  
+         
+        
+      </div>
+     </div>
+  </section>
     <section class="header" id="home">
       <video autoplay muted loop id="myVideo">
         <source src="vids/home.mp4" type="video/mp4" />
@@ -36,15 +59,15 @@
         <div class="links" id="nav-links">
           <i class="fa fa-times" onclick="hidemanu()"></i>
           <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#service">Services</a></li>
             <li><a href="#post">Posts</a></li>
             <li><a href="#review">Reviews</a></li>
-            <li><a href="#contact">CONTACT US</a></li>
-            <li><a href="#">
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#" onclick="togglePopup()">
               <span class="btn">
-                Join Us
+                Sign-Up
               </span>
               </a></li>
           </ul>
@@ -58,7 +81,7 @@
           Throwing away food is like stealing from the table of those who are
           poor and hungry.
         </p>
-        <a href="about.html" class="btn">Visit us to know more</a>
+        <a href="contact.html" class="btn">Visit us to know more</a>
       </div>
     </section>
     <div class="container">
@@ -112,7 +135,10 @@
               </ul>
             </div>
 
-            <a href="#" class="btn red-btn">Join Us Now</a>
+            <a href="contact.html">
+
+              <div class="btn red-btn">Join Us Now</div>
+            </a>
           </div>
           <div class="about-col">
             <figure>
@@ -153,7 +179,10 @@
           </div>
         </div>
         <center>
-          <div class="btn red-btn">Join Us Now</div>
+          <a href="contact.html">
+
+            <div class="btn red-btn">Join Us Now</div>
+          </a>
         </center>
       </section>
 
@@ -242,7 +271,7 @@
            More & More Prople
         </h1>
         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-        <a href="#" class="btn">Contact-US</a>
+        <a href="contact.html" class="btn">Contact-US</a>
       </section>
 
       <!-- footer  -->
@@ -289,5 +318,11 @@
       })
     }
     </script>
+     <script>
+      function togglePopup() {
+      document.getElementById("popup-1")
+       .classList.toggle("active");
+     }
+     </script>
   </body>
 </html>
